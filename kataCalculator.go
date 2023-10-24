@@ -54,12 +54,6 @@ func main() {
 		os.Exit(0)
 	}
 
-	if textLength > 5 {
-		err := errors.New("ошибка: введите пример с двумя операндами и одним оператором")
-		fmt.Println(err)
-		os.Exit(0)
-	}
-
 	numbers := strings.Split(text, i)
 	number1 = numbers[0]
 	number2 = numbers[1]
